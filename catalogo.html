@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>catalogo</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<!-- . -->
+
+<body>
+  <div class="grid">
+    <header>
+      <script src="assets/javascript/header.js"></script>
+    </header>
+    <main>
+      <a href="#top" class="scroll">
+        <img src="assets/images/flecha.png" alt="Subir">
+      </a>
+      <hr>
+      <div class="catalogo">
+        <h2>CATALOGO DE PRODUCTOS</h2>
+      </div>
+      <div id="buscadorcatalogo" class="buscadorynav">
+        <input class="buscadortxt" placeholder="Buscar en catalogo" type="text" id="textos"
+          onkeyup="FiltrarporCatalogo()" />
+        <button onclick="FiltrarporCatalogo()"><img class="buscadorimg" src="assets/images/lupa.png"
+            alt="ImagenLupa"></button>
+      </div>
+      <div class="contenedor" id="contenedor">
+      </div>
+      <h2 id="mensajenoresultado" style="display: none;">NO SE ENCONTRARON RESULTADOS DE LA BUSQUEDA</h2>
+    </main>
+    <div class="footer">
+      <script src="assets/javascript/footer.js"></script>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+  </div>
+</body>
+
+</html>

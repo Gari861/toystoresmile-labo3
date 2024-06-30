@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>abm</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<!-- . -->
+<body>
+  <div class="grid" id="top">
+    <header>
+      <script src="assets/javascript/header.js"></script>
+    </header>
+    <a href="#top" class="scroll">
+      <img src="assets/images/flecha.png" alt="Subir">
+    </a>
+    <main>
+      <hr>
+      <h1 style="text-align: center;">SELECCIONE LAS OPCIONES QUE QUIERA REALIZAR: </h1>
+      <br>
+      <div class="botones">
+        <button onclick="Mostrar()">MOSTRAR PRODUCTOS</button>
+        <button onclick="Agregar()">AGREGAR PRODUCTO</button>
+        <button onclick="Modificar()">MODIFICAR PRODUCTO</button>
+        <button onclick="Eliminar()">ELIMINAR PRODUCTO</button>
+      </div>
+
+      <div id="buscador" class="buscadorynav oculto">
+        <input class="buscadortxt" placeholder="Buscar en tabla" type="text" id="text" onkeyup="FiltrarporTabla()" />
+        <button onclick="FiltrarporTabla()"><img class="buscadorimg" src="assets/images/lupa.png"  alt="ImagenLupa"></button>
+      </div>
+      <hr>
+      <div class="tabla">
+        <table class="oculto" id="tabla">
+          <thead id="thead">
+            <tr>
+              <th>Id Producto</th>
+              <th>Titulo</th>
+              <th>Precio Peso</th>
+              <th>Precio Dolar</th>
+              <th>Fecha</th>
+              <th>Eliminar</th>
+              <th>Modificar</th>
+            </tr>
+          </thead>
+          <tbody id="resultado">
+          </tbody>
+        </table>
+      </div>
+      <h2 id="mensajenoresultado" style="display: none;">NO SE ENCONTRARON RESULTADOS DE LA BUSQUEDA</h2>
+      <div class="grid3">
+
+        <div class="ingresar oculto" id="agregar">
+          <div class="pregunta">
+            <h2>AGREGAR NUEVO PRODUCTO</h2>
+            <div class="respuesta">
+              Ingrese Título, Precio en Pesos, Precio en Dolares y Fecha del producto a agregar.
+            </div>
+          </div>
+          <hr>
+          <label for="agregarTitulo">Título: <br> <input required placeholder="(cadena de texto) " type="text"
+              name="agregarTitulo" id="agregarTitulo"></label>
+          <br>
+          <label for="agregarPrecioP">Precio Peso: $ <br><input required placeholder="(número) " type="number"
+              name="agregarPrecioP" id="agregarPrecioP"></label>
+          <br>
+          <label for="agregarPrecioD">Precio Dolar: USD <br><input required placeholder="(número) " type="number"
+              name="agregarPrecioD" id="agregarPrecioD"></label>
+          <br>
+          <label for="agregarFecha">Fecha: <br> <input required placeholder="(cadena YYYY-MM-DD)" type="date"
+              name="agregarFecha" id="agregarFecha"></label>
+          <br>
+          <hr>
+          <button type="button" onclick="GuardarProducto()">Agregar Producto</button>
+        </div>
+
+        <div class="ingresar oculto" id="modificarportabla">
+          <div class="pregunta">
+            <h2>MODIFICAR PRODUCTO</h2>
+            <div class="respuesta">
+              Ingrese Título, Precio en Pesos, Precio en Dolares y Fecha del producto a modificar.
+            </div>
+          </div>
+          <hr>
+          <label for="modificarID">ID producto: <br><input disabled placeholder="(cadena de texto) " type="text"
+              name="modificarID" id="modificarID"></label>
+          <!-- disabled permite inhabilitar sobreescritura -->
+          <hr>
+          <label for="modificarTitulo">Título: <br><input required placeholder="(cadena de texto) " type="text"
+              name="modificarTitulo" id="modificarTitulo"></label>
+          <br>
+          <label for="modificarPrecioP">Precio Peso: $<br><input required placeholder="(número) " type="number"
+              name="modificarPrecioP" id="modificarPrecioPeso"></label>
+          <br>
+          <label for="modificarPrecioD">Precio Dolar: USD<br><input required placeholder="(número) " type="number"
+              name="modificarPrecioD" id="modificarPrecioDolar"></label>
+          <br>
+          <label for="modificarFecha">Fecha: <br><input required placeholder="(cadena YYYY-MM-DD) " type="date"
+              name="modificarFecha" id="modificarFecha"></label>
+          <br>
+          <hr>
+          <button onclick="ModificarProducto()">Guardar cambios</button>
+        </div>
+
+        <div class="ingresar oculto" id="modificar">
+          <div class="pregunta">
+            <h2>MODIFICAR PRODUCTO</h2>
+            <div class="respuesta">
+              Ingrese el ID del producto a modificar.
+            </div>
+          </div>
+          <hr>
+          <label for="modificarID">ID producto: <br><input required placeholder="(cadena de texto) " type="text"
+              name="modificarID" id="modificarIDIngreso"></label>
+          <hr>
+          <button onclick="ObtenerporId()">Modificar</button>
+        </div>
+
+        <div class="ingresar oculto" id="eliminar">
+          <div class="pregunta">
+            <h2>ELIMINAR PRODUCTO</h2>
+            <div class="respuesta">
+              Ingrese el ID del producto a eliminar.
+            </div>
+          </div>
+          <hr>
+          <label for="eliminarID">ID producto: <br><input required placeholder="(cadena de texto)" type="text"
+              name="eliminarID" id="eliminarID"></label>
+          <br>
+          <hr>
+          <button onclick="EliminarProducto()">Eliminar</button>
+        </div>
+
+      </div>
+    </main>
+    <div class="footer">
+      <script src="assets/javascript/footer.js"></script>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/api.js"></script>
+  </body>
+
+</html>

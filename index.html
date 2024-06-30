@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>jugueteriasmile</title>
+ <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<!-- . -->
+
+<body>
+ <div class="grid" id="top">
+  <header>
+   <script src="assets/javascript/header.js"></script>
+  </header>
+  <main>
+   <hr>
+   <div class="texto">
+    <h3>¡Lo mejor para ti! Encuentra el regalo perfecto con los mejores precios.</h3>
+   </div>
+   <a href="#top" class="scroll">
+    <img src="assets/images/flecha.png" alt="Subir">
+   </a>
+   <div class="metodos">
+    <div class="metodo">
+     <img src="https://img.icons8.com/ios-filled/50/000000/delivery.png" alt="Envío Gratis" class="icono">
+     <h3>Aprovechá el beneficio del envío gratis</h3>
+     <p>Aplica en compras a partir de $25.000.</p>
+    </div>
+    <div class="metodo">
+     <img src="https://img.icons8.com/ios-filled/50/000000/bank-card-back-side.png" alt="Medio de Pago" class="icono">
+     <h3>Elegí tu medio de pago favorito</h3>
+     <p>Pagá con tarjeta, transferencia o en efectivo.</p>
+    </div>
+    <div class="metodo">
+     <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Entrega Rápida" class="icono">
+     <h3>Nuestra ubicación</h3>
+     <p>Calle N° 1, 705 Frontera Santa Fe</p>
+     <p>Sobre camino interprovincial</p>
+    </div>
+   </div>
+   <div class="buscadorynav">
+    <input class="buscadortxt" placeholder="Buscar por categoria" type="text" id="texto" onkeyup="FiltrarporCategoria()" />
+    <button onclick="FiltrarporCategoria()"><img class="buscadorimg" src="assets/images/lupa.png" 
+      alt="ImagenLupa"></button>
+   </div>
+   <div id="grid-container" class="grid-container">
+    <div id="grid-item" class="grid-item armas">
+     <img width="140" src="assets/images/arma.png" alt="Armas">
+     <div class="preguntaP">
+      <h2>ARMAS</h2>
+      <div class="respuestaP">
+       <p>Set de Armas desde $5.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item arte">
+     <img width="120" src="assets/images/arte.png" alt="Arte">
+     <div class="preguntaP">
+      <h2>ARTE Y DISEÑO</h2>
+      <div class="respuestaP">
+       <p>Articulos de diseño desde $8.000</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item autos">
+     <img width="130"
+      src="https://tiendaelgranbazar.com/wp-content/uploads/2024/04/image-removebg-preview-17-400x400.png"
+      alt="Autoscontrolremoto">
+     <div class="preguntaP">
+      <h2>AUTOS RADIO CONTROL</h2>
+      <div class="respuestaP">
+       <p>Vehículos a Control Remoto desde $9.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item bebotes">
+     <img width="110"
+      src="https://acdn.mitiendanube.com/stores/991/977/products/eoasrfa-jpg1-2eb76a1143c7ae280f15917276221462-240-0-removebg-preview1-07f89e4a34bf57d1b215942986624489-1024-1024.png"
+      alt="Bebotes">
+     <div class="preguntaP">
+      <h2>BEBOTES</h2>
+      <div class="respuestaP">
+       <p>Bebotes desde $7.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item bloques">
+     <img width="120" src="https://cdn.pixabay.com/photo/2014/03/25/16/58/building-blocks-297773_1280.png"
+      alt="Bloques">
+     <div class="preguntaP">
+      <h2>BLOQUES PARA ARMAR</h2>
+      <div class="respuestaP">
+       <p>Bloques y Figuras para armar desde $4.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item herramientas">
+     <img width="150" src="assets/images/herramientas.png" alt="Herramientas">
+     <div class="preguntaP">
+      <h2>HERRAMIENTAS</h2>
+      <div class="respuestaP">
+       <p>Herramientas desde $6.000</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item cocina">
+     <img width="180" src="assets/images/cocina.png" alt="Cocina">
+     <div class="preguntaP">
+      <h2>JUEGOS DE COCINA</h2>
+      <div class="respuestaP">
+       <p>Juegos de cocina desde $9.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item juegos">
+     <img width="130" src="https://cdn-icons-png.flaticon.com/512/1752/1752751.png" alt="Juegosdemesa">
+     <div class="preguntaP">
+      <h2>JUEGOS DE MESA</h2>
+      <div class="respuestaP">
+       <p>Juegos de Mesa desde $3.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item didacticos">
+     <img width="130" src="assets/images/didactico.png" alt="Didacticos">
+     <div class="preguntaP">
+      <h2>JUEGOS DIDACTICOS</h2>
+      <div class="respuestaP">
+       <p>Juegos didacticos desde $2.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item maquillaje">
+     <img width="140" src="assets/images/maquillaje.png" alt="Maquillaje">
+     <div class="preguntaP">
+      <h2>MAQUILLAJE</h2>
+      <div class="respuestaP">
+       <p>Maquillaje desde $2.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item musicales">
+     <img width="150" src="assets/images/musicales.png" alt="Musicales">
+     <div class="preguntaP">
+      <h2>MUSICALES</h2>
+      <div class="respuestaP">
+       <p>Musicales desde $17.500</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item muñecas">
+     <img width="120" src="https://i.pinimg.com/originals/15/1b/1c/151b1c8cd8c90b48dd1ff8bce95579d5.png"
+      alt="Muñeca"></a>
+     <div class="preguntaP">
+      <h2>MUÑECAS & ACCESORIOS</h2>
+      <div class="respuestaP">
+       <p>Muñecas desde $4.000</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item muñecos">
+     <img width="90" src="assets/images/muñecos.png" alt="Muñecos">
+     <div class="preguntaP">
+      <h2>MUÑECOS Y FIGURAS DE ACCION</h2>
+      <div class="respuestaP">
+       <p>Muñecos de acción desde $6.000</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item peluches">
+     <img width="130"
+      src="https://static.vecteezy.com/system/resources/previews/026/133/514/original/teddy-bear-isolated-on-transparent-background-generative-ai-png.png"
+      alt="Peluches">
+     <div class="preguntaP">
+      <h2>PELUCHES</h2>
+      <div class="respuestaP">
+       <p>Peluches desde $11.000</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item valijas">
+     <img width="170" src="assets/images/valija.png" alt="Valijas">
+     <div class="preguntaP">
+      <h2>VALIJAS JULIANA</h2>
+      <div class="respuestaP">
+       <p>Valijas desde $13.550</p>
+      </div>
+     </div>
+    </div>
+    <div id="grid-item" class="grid-item vehiculos">
+     <img width="150" src="assets/images/pista.png" alt="Pistas">
+     <div class="preguntaP">
+      <h2>VEHICULOS Y PISTAS</h2>
+      <div class="respuestaP">
+       <p>Pistas desde $9.500</p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <h2 id="mensajenoresultado" style="display: none;">NO SE ENCONTRARON RESULTADOS DE LA BUSQUEDA</h2>
+   <div class="horarios">
+   </div>
+  </main>
+  <div class="footer">
+    <script src="assets/javascript/footer.js"></script>
+  </div>
+  <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
